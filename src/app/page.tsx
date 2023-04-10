@@ -1,7 +1,11 @@
+import Header from "@/app/components/Header";
+import Hero from "@/app/components/Hero";
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1>Giorgi Kalatozi</h1>
+    <main className="">
+      <Header />
+      <Hero />
     </main>
   );
 }
