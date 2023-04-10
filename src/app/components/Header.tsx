@@ -5,7 +5,7 @@ type Props = {};
 
 export default function Header({}: Props) {
   return (
-    <div className="max-w-6xl mx-auto">
+    <div className="max-w-7xl mx-auto">
       <div className="navbar bg-base-100">
         <div className="flex-1">
           <a className="btn btn-ghost normal-case text-xl">
@@ -19,6 +19,9 @@ export default function Header({}: Props) {
             </li>
             <li>
               <a>Projects</a>
+            </li>
+            <li>
+              <a>Contact</a>
             </li>
             <li>
               <a>Guestbook</a>
