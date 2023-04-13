@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { BsMoonStars } from "react-icons/bs";
 
 type Props = {};
@@ -7,21 +8,31 @@ export default function Header({}: Props) {
     <div className="max-w-7xl mx-auto py-7 ">
       <div className="flex justify-between ">
         {/* LOGO */}
-        <div>Giorgi Kalatozi</div>
+        <div>
+          <h1 className="text-xl font-semibold">Giorgi Kalatozi</h1>
+        </div>
         {/* NAVBAR */}
         <nav className="">
           <ul className="flex gap-4">
             <li>
-              <a href="#">About</a>
+              <Link className="hover:underline " href="#">
+                About
+              </Link>
             </li>
             <li>
-              <a href="#">Projects</a>
+              <Link className="hover:underline " href="#">
+                Projects
+              </Link>
             </li>
             <li>
-              <a href="#">Skills</a>
+              <Link className="hover:underline" href="#">
+                Skills
+              </Link>
             </li>
             <li>
-              <a href="#">Contact</a>
+              <Link className="hover:underline" href="#">
+                Contact
+              </Link>
             </li>
           </ul>
         </nav>
