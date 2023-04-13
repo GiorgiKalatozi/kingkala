@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  animation: 200ms ease 100ms 1 normal forwards running;
+}

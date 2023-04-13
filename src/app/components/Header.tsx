@@ -1,32 +1,33 @@
-import React from "react";
-import Logo from "@/app/components/Logo";
+import { BsMoonStars } from "react-icons/bs";
 
 type Props = {};
 
 export default function Header({}: Props) {
   return (
-    <div className="max-w-7xl mx-auto">
-      <div className="navbar bg-base-100">
-        <div className="flex-1">
-          <a className="btn btn-ghost normal-case text-xl">
-            <Logo />
-          </a>
-        </div>
-        <div className="flex-none">
-          <ul className="menu menu-horizontal px-1">
+    <div className="max-w-7xl mx-auto py-7 ">
+      <div className="flex justify-between ">
+        {/* LOGO */}
+        <div>Giorgi Kalatozi</div>
+        {/* NAVBAR */}
+        <nav className="">
+          <ul className="flex gap-4">
             <li>
-              <a>About</a>
+              <a href="#">About</a>
             </li>
             <li>
-              <a>Projects</a>
+              <a href="#">Projects</a>
             </li>
             <li>
-              <a>Contact</a>
+              <a href="#">Skills</a>
             </li>
             <li>
-              <a>Guestbook</a>
+              <a href="#">Contact</a>
             </li>
           </ul>
+        </nav>
+        {/* ICONS */}
+        <div>
+          <BsMoonStars />
         </div>
       </div>
     </div>
