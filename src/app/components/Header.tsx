@@ -16,32 +16,32 @@ export default function Header() {
           <ul className="flex gap-4">
             <li>
               <Link
-                className="hover:text-gray-300 transition text-white "
+                className="hover:text-gray-300 transition tracking-wide text-white "
                 href="#"
               >
-                About
+                Home
               </Link>
             </li>
             <li>
               <Link
-                className="hover:text-gray-300 transition text-white "
-                href="#"
+                className="hover:text-gray-300 transition tracking-wide text-white "
+                href="/experience"
+              >
+                Experience
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="hover:text-gray-300 transition tracking-wide text-white "
+                href="projects"
               >
                 Projects
               </Link>
             </li>
             <li>
               <Link
-                className="hover:text-gray-300 transition text-white"
-                href="#"
-              >
-                Skills
-              </Link>
-            </li>
-            <li>
-              <Link
-                className="hover:text-gray-300 transition text-white"
-                href="#"
+                className="hover:text-gray-300 transition tracking-wide text-white"
+                href="/contact"
               >
                 Contact
               </Link>

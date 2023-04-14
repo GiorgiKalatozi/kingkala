@@ -13,12 +13,12 @@ export default function Hero({ quote }: HeroProps) {
           <h3 className=" text-[20px] text-gray-300">Hi 👋 , My name is</h3>
           <div className="text-6xl font-bold ">Giorgi Kalatozi.</div>
           <p className="font-bold bg-gradient-to-r from-gray-300 via-teal-100 to-teal-500 bg-clip-text text-transparent text-5xl">
-            I build things for the web.
+            I build apps for the web.
           </p>
 
           <div>
             <p className="text-gray-400">
-              I’m a full stack software developer specializing in building
+              I’m a full stack software developer passionate about building
               beautiful, fast and modern
             </p>
             <p className="text-gray-400">

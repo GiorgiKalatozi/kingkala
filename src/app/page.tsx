@@ -8,7 +8,6 @@ export default async function Home() {
 
   return (
     <main>
-      <Header />
       <Hero quote={quote} />
     </main>
   );
