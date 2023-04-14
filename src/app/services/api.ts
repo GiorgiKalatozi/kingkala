@@ -1,5 +1,5 @@
 export async function getQuotes() {
-  const res = await fetch("https://api.quotable.io/random?maxLength=46", {
+  const res = await fetch("https://api.quotable.io/random?maxLength=50", {
     next: { revalidate: 1 },
   });
   // The return value is *not* serialized
