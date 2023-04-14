@@ -34,7 +34,7 @@ export default function Hero({ quote }: HeroProps) {
 
         <div className="flex basis-56 items-end flex-col justify-center ">
           <FcIdea size="50px" />
-          <h3 className=" bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent text-5xl font-black">
+          <h3 className=" bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent text-4xl font-black">
             {quote.content}
           </h3>
           <h5 className="text-transparent bg-clip-text bg-gradient-to-r font-bold from-red-500 to-white text-[20px] ">

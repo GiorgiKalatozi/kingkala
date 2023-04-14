@@ -1,9 +1,7 @@
 import Link from "next/link";
 import { BsMoonStars, BsGithub, BsLinkedin } from "react-icons/bs";
 
-type Props = {};
-
-export default function Header({}: Props) {
+export default function Header() {
   return (
     <div className="max-w-4xl mx-auto py-7 ">
       <div className="flex justify-between items-center ">
