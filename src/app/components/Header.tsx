@@ -17,9 +17,9 @@ export default function Header() {
             <li>
               <Link
                 className="hover:text-gray-300 transition tracking-wide text-white "
-                href="#"
+                href="/blog"
               >
-                Home
+                Blog
               </Link>
             </li>
             <li>
@@ -33,7 +33,7 @@ export default function Header() {
             <li>
               <Link
                 className="hover:text-gray-300 transition tracking-wide text-white "
-                href="projects"
+                href="/projects"
               >
                 Projects
               </Link>
@@ -50,7 +50,7 @@ export default function Header() {
         </nav>
         {/* ICONS */}
         <div className="flex gap-4">
-          <Link href="https://github.com/narutokalatozi" target="_blank">
+          <Link href="https://github.com/giorgikalatozi" target="_blank">
             <BsGithub
               className="text-gray-400  transition hover:text-white"
               fontSize="20px"
