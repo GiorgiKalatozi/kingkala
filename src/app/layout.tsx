@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata = {
   title: "Giorgi Kalatozi | Developer",
-  description: "Giorgi Kalatozishvili Developer Porfolio website",
+  description: "Giorgi Kalatozishvili's Developer Porfolio website",
 };
 
 export default function RootLayout({
