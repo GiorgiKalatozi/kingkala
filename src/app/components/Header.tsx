@@ -6,7 +6,7 @@ export default function Header() {
     <div className="max-w-4xl mx-auto py-7 ">
       <div className="flex justify-between items-center ">
         <div>
-          <Link href="/" className="text-3xl font-bold ">
+          <Link href="/" className="text-3xl font-bold">
             {/* <Logo /> */}
             GK
             {/* Giorgi Kalatozi */}
@@ -17,17 +17,9 @@ export default function Header() {
             <li>
               <Link
                 className="hover:text-gray-300 transition tracking-wide text-white "
-                href="/blog"
+                href="/about"
               >
-                Blog
-              </Link>
-            </li>
-            <li>
-              <Link
-                className="hover:text-gray-300 transition tracking-wide text-white "
-                href="/experience"
-              >
-                Experience
+                About
               </Link>
             </li>
             <li>
@@ -36,6 +28,14 @@ export default function Header() {
                 href="/projects"
               >
                 Projects
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="hover:text-gray-300 transition tracking-wide text-white "
+                href="/blog"
+              >
+                Blog
               </Link>
             </li>
             <li>

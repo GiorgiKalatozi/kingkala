@@ -16,10 +16,12 @@ export default function Hero({ quote }: HeroProps) {
         <div className="flex">
           <div className="flex-1 flex flex-col justify-between gap-4">
             <h3 className=" text-[20px] text-gray-300">Hi 👋 , My name is</h3>
-            <div className="text-6xl font-bold ">Giorgi Kalatozi.</div>
-            <p className="font-bold bg-gradient-to-r from-gray-300 via-teal-100 to-teal-500 bg-clip-text text-transparent text-5xl">
+            <div className="text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-tl from-slate-500 via-cyan-200 to-current">
+              Giorgi Kalatozi.
+            </div>
+            {/* <p className="font-bold bg-gradient-to-r from-gray-300 via-teal-100 to-teal-500 bg-clip-text text-transparent text-5xl">
               I build things for the web.
-            </p>
+            </p> */}
             <div>
               <p className="text-gray-400">
                 I’m a full stack software developer passionate about building
