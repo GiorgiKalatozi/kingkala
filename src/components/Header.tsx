@@ -37,7 +37,7 @@ export default function Header() {
           <ul className="flex gap-4">
             <li>
               <Link
-                className="hover:text-gray-100 dark:hover:text-gray-100 transition tracking-wide text-gray-300 dark:text-gray-950 "
+                className="dark:hover:text-gray-100 hover:text-gray-100 transition tracking-wide  dark:text-gray-300 text-gray-950 "
                 href="/"
               >
                 About
@@ -45,7 +45,7 @@ export default function Header() {
             </li>
             <li>
               <Link
-                className="hover:text-gray-100  dark:hover:text-gray-100 transition tracking-wide text-gray-300 dark:text-gray-950 "
+                className="dark:hover:text-gray-100  hover:text-gray-100 transition tracking-wide dark:text-gray-300 text-gray-950 "
                 href="/"
               >
                 Projects
@@ -53,7 +53,7 @@ export default function Header() {
             </li>
             <li>
               <Link
-                className="hover:text-gray-100 dark:hover:text-gray-100 transition tracking-wide text-gray-300 dark:text-gray-950"
+                className="dark:hover:text-gray-100 hover:text-gray-100 transition tracking-wide dark:text-gray-300 text-gray-950"
                 href="/"
               >
                 Skills
@@ -61,7 +61,7 @@ export default function Header() {
             </li>
             <li>
               <Link
-                className="hover:text-gray-100 dark:hover:text-gray-100 transition tracking-wide text-gray-300 dark:text-gray-950"
+                className="dark:hover:text-gray-100 hover:text-gray-100 transition tracking-wide dark:text-gray-300 text-gray-950"
                 href="/"
               >
                 Contact
@@ -73,7 +73,7 @@ export default function Header() {
         <div className="flex gap-4">
           <Link href="https://github.com/giorgikalatozi" target="_blank">
             <BsGithub
-              className="text-gray-400  transition hover:text-white dark:text-gray-950 "
+              className="dark:text-gray-400  transition hover:text-white text-gray-950 "
               fontSize="20px"
             />
           </Link>
@@ -83,21 +83,21 @@ export default function Header() {
           >
             <BsLinkedin
               fontSize="20px"
-              className="text-gray-400  transition hover:text-white dark:text-gray-950  "
+              className="dark:text-gray-400  transition hover:text-white text-gray-950  "
             />
           </Link>
 
           {currentTheme === "light" ? (
-            <BsFillSunFill
+            <BsMoonStars
               onClick={() => setTheme("dark")}
               fontSize="20px"
-              className="text-gray-400  transition cursor-pointer hover:text-white dark:text-gray-950"
+              className="dark:text-gray-400  transition cursor-pointer hover:text-white  "
             />
           ) : (
-            <BsMoonStars
+            <BsFillSunFill
               onClick={() => setTheme("light")}
               fontSize="20px"
-              className="text-gray-400  transition cursor-pointer hover:text-white dark:text-gray-950 "
+              className="dark:text-gray-400  transition cursor-pointer hover:text-white "
             />
           )}
         </div>
