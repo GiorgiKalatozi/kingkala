@@ -13,7 +13,9 @@ import { GiHamburgerMenu } from "react-icons/gi";
 export default function Header() {
   const [mounted, setMounted] = useState(false);
 
-  const { theme, setTheme } = useTheme();
+  const { theme, setTheme, systemTheme } = useTheme();
+
+  const currentTheme = theme === "system" ? systemTheme : theme;
 
   useEffect(() => {
     setMounted(true);
@@ -85,7 +87,7 @@ export default function Header() {
             />
           </Link>
 
-          {theme === "light" ? (
+          {currentTheme === "light" ? (
             <BsFillSunFill
               onClick={() => setTheme("dark")}
               fontSize="20px"
