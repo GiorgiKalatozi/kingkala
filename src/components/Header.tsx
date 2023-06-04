@@ -1,9 +1,31 @@
+"use client";
+
+import { useTheme } from "next-themes";
 import Link from "next/link";
-import { BsMoonStars, BsGithub, BsLinkedin } from "react-icons/bs";
+import { useEffect, useState } from "react";
+import {
+  BsMoonStars,
+  BsGithub,
+  BsLinkedin,
+  BsFillSunFill,
+  BsSun,
+  BsSunFill,
+} from "react-icons/bs";
+import { BiSun } from "react-icons/bi";
 
 export default function Header() {
+  const [mounted, setMounted] = useState(false);
+
+  const { theme, setTheme } = useTheme();
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) return null;
+
   return (
-    <div className="max-w-4xl mx-auto py-7 ">
+    <div className="max-w-4xl mx-auto py-7   ">
       <div className="flex justify-between items-center ">
         <div>
           <Link href="/" className="text-3xl font-bold">
@@ -16,7 +38,7 @@ export default function Header() {
           <ul className="flex gap-4">
             <li>
               <Link
-                className="hover:text-gray-300 transition tracking-wide text-white "
+                className="hover:text-gray-100 dark:hover:text-gray-100 transition tracking-wide text-gray-300 dark:text-gray-950 "
                 href="/"
               >
                 About
@@ -24,7 +46,7 @@ export default function Header() {
             </li>
             <li>
               <Link
-                className="hover:text-gray-300 transition tracking-wide text-white "
+                className="hover:text-gray-100  dark:hover:text-gray-100 transition tracking-wide text-gray-300 dark:text-gray-950 "
                 href="/"
               >
                 Projects
@@ -32,7 +54,7 @@ export default function Header() {
             </li>
             <li>
               <Link
-                className="hover:text-gray-300 transition tracking-wide text-white"
+                className="hover:text-gray-100 dark:hover:text-gray-100 transition tracking-wide text-gray-300 dark:text-gray-950"
                 href="/"
               >
                 Skills
@@ -40,7 +62,7 @@ export default function Header() {
             </li>
             <li>
               <Link
-                className="hover:text-gray-300 transition tracking-wide text-white"
+                className="hover:text-gray-100 dark:hover:text-gray-100 transition tracking-wide text-gray-300 dark:text-gray-950"
                 href="/"
               >
                 Contact
@@ -52,7 +74,7 @@ export default function Header() {
         <div className="flex gap-4">
           <Link href="https://github.com/giorgikalatozi" target="_blank">
             <BsGithub
-              className="text-gray-400  transition hover:text-white"
+              className="text-gray-400  transition hover:text-white dark:text-gray-950 "
               fontSize="20px"
             />
           </Link>
@@ -62,13 +84,23 @@ export default function Header() {
           >
             <BsLinkedin
               fontSize="20px"
-              className="text-gray-400  transition hover:text-white"
+              className="text-gray-400  transition hover:text-white dark:text-gray-950  "
             />
           </Link>
-          <BsMoonStars
-            fontSize="20px"
-            className="text-gray-400  transition cursor-pointer hover:text-white"
-          />
+
+          {theme === "light" ? (
+            <BsFillSunFill
+              onClick={() => setTheme("dark")}
+              fontSize="20px"
+              className="text-gray-400  transition cursor-pointer hover:text-white dark:text-gray-950"
+            />
+          ) : (
+            <BsMoonStars
+              onClick={() => setTheme("light")}
+              fontSize="20px"
+              className="text-gray-400  transition cursor-pointer hover:text-white dark:text-gray-950 "
+            />
+          )}
         </div>
       </div>
     </div>
