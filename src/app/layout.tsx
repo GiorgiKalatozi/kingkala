@@ -1,3 +1,4 @@
+import { ThemeProvider } from "@/lib/providers";
 import "./globals.css";
 
 export const metadata = {
@@ -19,7 +20,7 @@ export default function RootLayout({
           // "bg-gradient-to-r from-gray-100 to-gray-300"
         }
       >
-        {children}
+        <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>
   );
