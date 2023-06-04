@@ -73,7 +73,7 @@ export default function Header() {
         <div className="flex gap-4">
           <Link href="https://github.com/giorgikalatozi" target="_blank">
             <BsGithub
-              className="dark:text-gray-400  transition hover:text-white text-gray-950 "
+              className="dark:text-gray-400 dark:hover:text-white  transition hover:text-white text-gray-950 "
               fontSize="20px"
             />
           </Link>
@@ -83,7 +83,7 @@ export default function Header() {
           >
             <BsLinkedin
               fontSize="20px"
-              className="dark:text-gray-400  transition hover:text-white text-gray-950  "
+              className="dark:text-gray-400 dark:hover:text-white transition hover:text-white text-gray-950"
             />
           </Link>
 
@@ -91,13 +91,13 @@ export default function Header() {
             <BsMoonStars
               onClick={() => setTheme("dark")}
               fontSize="20px"
-              className="dark:text-gray-400  transition cursor-pointer hover:text-white  "
+              className="dark:text-gray-400 dark:hover:text-white  transition cursor-pointer hover:text-white"
             />
           ) : (
             <BsFillSunFill
               onClick={() => setTheme("light")}
               fontSize="20px"
-              className="dark:text-gray-400  transition cursor-pointer hover:text-white "
+              className="dark:text-gray-400 dark:hover:text-white transition cursor-pointer hover:text-white"
             />
           )}
         </div>

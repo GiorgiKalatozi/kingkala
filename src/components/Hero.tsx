@@ -25,7 +25,7 @@ export default function Hero({ quote }: HeroProps) {
               I build things for the web.
             </p> */}
             <div>
-              <p className="dark:text-gray-400   text-stone-950	 ">
+              <p className="dark:text-gray-400 text-stone-950	 ">
                 I’m a full-stack software developer passionate about building
                 beautiful, fast and modern
               </p>
