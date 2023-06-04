@@ -8,11 +8,8 @@ import {
   BsGithub,
   BsLinkedin,
   BsFillSunFill,
-  BsSun,
-  BsSunFill,
 } from "react-icons/bs";
-import { BiSun } from "react-icons/bi";
-
+import { GiHamburgerMenu } from "react-icons/gi";
 export default function Header() {
   const [mounted, setMounted] = useState(false);
 
@@ -25,7 +22,7 @@ export default function Header() {
   if (!mounted) return null;
 
   return (
-    <div className="max-w-4xl mx-auto py-7   ">
+    <div className="max-w-4xl mx-auto py-7    ">
       <div className="flex justify-between items-center ">
         <div>
           <Link href="/" className="text-3xl font-bold">
@@ -34,7 +31,7 @@ export default function Header() {
             {/* Giorgi Kalatozi */}
           </Link>
         </div>
-        <nav>
+        <nav className="hidden lg:flex">
           <ul className="flex gap-4">
             <li>
               <Link

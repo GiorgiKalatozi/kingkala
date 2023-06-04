@@ -40,12 +40,12 @@ export default function Hero({ quote }: HeroProps) {
             </div>
           </div>
           <RiReactjsFill
-            className=" text-red-600 bg-transparent rounded-full  shadow-red-500/50 hover:shadow-indigo-500/40 hover:text-blue-600 shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px] transition hover:brightness-150 brightness-150"
+            className=" hidden md:block text-red-600  bg-transparent rounded-full  shadow-red-500/50 hover:shadow-indigo-500/40 hover:text-blue-600 shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px] transition hover:brightness-150 brightness-150"
             size={200}
           />
         </div>
 
-        <div className="flex basis-56 items-end flex-col justify-center ">
+        <div className=" flex basis-56 items-end flex-col justify-center ">
           <FcIdea size="50px" />
           <h3 className=" bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent text-4xl font-black">
             {quote.content}
