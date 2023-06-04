@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Quote } from "../types";
+import { Quote } from "../app/types";
 import { FcIdea } from "react-icons/fc";
 import { RiReactjsFill } from "react-icons/ri";
 
@@ -24,11 +24,11 @@ export default function Hero({ quote }: HeroProps) {
             </p> */}
             <div>
               <p className="text-gray-400">
-                I’m a full stack software developer passionate about building
+                I’m a full-stack software developer passionate about building
                 beautiful, fast and modern
               </p>
               <p className="text-gray-400">
-                web applications. Currently, I am committed to becoming a better
+                web applications. I am always committed to becoming a better
                 developer with a
               </p>
               <p className="text-gray-400">

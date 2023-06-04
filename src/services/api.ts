@@ -1,6 +1,6 @@
 export async function getQuotes() {
-  const res = await fetch("https://api.quotable.io/random?maxLength=50", {
-    next: { revalidate: 1 },
+  const res = await fetch("https://api.quotable.io/random?maxLength=40", {
+    cache: "no-store",
   });
   // The return value is *not* serialized
   // You can return Date, Map, Set, etc.

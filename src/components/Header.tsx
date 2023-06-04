@@ -17,7 +17,7 @@ export default function Header() {
             <li>
               <Link
                 className="hover:text-gray-300 transition tracking-wide text-white "
-                href="/about"
+                href="/"
               >
                 About
               </Link>
@@ -25,23 +25,23 @@ export default function Header() {
             <li>
               <Link
                 className="hover:text-gray-300 transition tracking-wide text-white "
-                href="/projects"
+                href="/"
               >
                 Projects
               </Link>
             </li>
             <li>
               <Link
-                className="hover:text-gray-300 transition tracking-wide text-white "
-                href="/blog"
+                className="hover:text-gray-300 transition tracking-wide text-white"
+                href="/"
               >
-                Blog
+                Skills
               </Link>
             </li>
             <li>
               <Link
                 className="hover:text-gray-300 transition tracking-wide text-white"
-                href="/contact"
+                href="/"
               >
                 Contact
               </Link>
