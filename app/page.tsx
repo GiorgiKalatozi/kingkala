@@ -6,6 +6,20 @@ export default function Home() {
       <Button className="flex items-center justify-center m-auto">
         Build Yourself
       </Button>
+
+      <Button
+        variant={"destructive"}
+        className="flex items-center justify-center m-auto"
+      >
+        Suffer or suffer
+      </Button>
+
+      <Button
+        variant={"outline"}
+        className="flex items-center justify-center m-auto"
+      >
+        there is no tommorrow
+      </Button>
     </main>
   );
 }
